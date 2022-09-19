@@ -1,5 +1,4 @@
 import streamlit as st
-import subprocess
 import io
 import pandas as pd
 import numpy as np
@@ -15,7 +14,7 @@ def get_dataframe(data_url):
     df = pd.read_csv(io.StringIO(r.text), encoding='utf8', sep=",", dtype={"switch": np.int8})
     return df
 
-st.title("ML BookCamp 2022")
+st.title("ML BookCamp 2022: Homework #1")
 st.write("---")
 st.subheader("Data: ")
 
